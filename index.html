@@ -3,32 +3,69 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Партфолио</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<title>Портфолио</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<header id="header">
 			<div class="container">
 				<div class="row">
-					<div class="col-12">
-						<p class="text-start">vladdeek</p>
-						<div class="links">
-							<a href="#about"></a>
-							<a href="#skill"></a>
-							<a href="#project"></a>
-							<a href="#contact"></a>
+					<div class="col-12 d-flex justify-content-between align-items-center">
+						<p class="name">vladdeek</p>
+						<div class="links text-center">
+							<a class="link" href="#about">about</a>
+							<a class="link" href="#skill">skills</a>
+							<a class="link" href="#project">project</a>
+							<a class="link" href="#contact">contact</a>
 						</div>
+						<a class="git" href="#about">GitHub</a>
 					</div>
 				</div>
 			</div>
 		</header>
-		<section id="about"></section>
+		<section id="start">
+			<div class="col-12">
+				<p class="large-name text-center text-uppercase">vladdeek</p>
+				<p id="shadow1" class="shadow large-name text-center text-uppercase">
+					vladdeek
+				</p>
+				<p id="shadow2" class="shadow large-name text-center text-uppercase">
+					vladdeek
+				</p>
+				<p id="shadow3" class="shadow large-name text-center text-uppercase">
+					vladdeek
+				</p>
+			</div>
+		</section>
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p class="title text-center">About me</p>
+						<div class="about-me d-flex">
+							<div class="col-6">
+								<img
+									class="img-profile"
+									src="img/avatar-default-svgrepo-com.svg"
+									alt="..."
+								/>
+							</div>
+							<div class="col-6">
+								<p class="about-me-name">Владислав</p>
+								<p class="about-me-stack">Front-End Developer</p>
+								<p class="about-me-text"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section id="skill"></section>
 		<section id="project"></section>
 		<section id="contact"></section>
 		<footer id="footer"></footer>
-		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
