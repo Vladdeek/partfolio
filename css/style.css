@@ -9,9 +9,10 @@ body {
 }
 section#start {
 	margin-top: 10%;
+}
+section {
 	margin-bottom: 20%;
 }
-
 a,
 p {
 	color: var(--text-color);
@@ -29,6 +30,10 @@ p {
 	white-space: nowrap;
 	font-size: 19px;
 	font-weight: 400;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: pointer;
 }
 .git {
 	background-color: transparent;
@@ -37,6 +42,10 @@ p {
 	color: var(--text-color);
 	padding: 7px;
 	transition: 0.2s;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: pointer;
 }
 .git:hover {
 	background-color: var(--text-color);
@@ -89,18 +98,24 @@ p {
 }
 .img-profile {
 	background-color: white;
-	height: 100%;
-	width: 100%;
+	height: auto;
+	width: 75%;
 	overflow: hidden;
 	border-radius: 15px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
 }
-
 .title {
 	font-size: 45px;
 	font-weight: 900;
-	transform: scale(0.25);
+	transform: translateY(-50px) scale(0.25);
 	opacity: 0;
-	transition: 0.5s ease-in-out;
+	transition: 0.5s;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: default;
 }
 @media (max-width: 800px) {
 	.large-name {
@@ -109,4 +124,119 @@ p {
 	.shadow {
 		margin-top: -125px;
 	}
+}
+.img-container {
+	transform: translateX(-90%) translateY(-10%) scale(0.5);
+	opacity: 0;
+	transition: 0.5s;
+	margin: 1%;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+.rezume-container {
+	transform: translateX(90%) translateY(10%) scale(0.5);
+	opacity: 0;
+	transition: 0.5s;
+	margin: 1%;
+}
+.about-me-stack {
+	display: inline-block;
+	background-color: var(--text-color);
+	color: var(--bg-color);
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: default;
+}
+.about-me-name {
+	font-size: 30px;
+	font-weight: 200;
+}
+.about-me-text {
+	font-size: 20px;
+	font-weight: 100;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: default;
+}
+.paragraph {
+	margin-bottom: 10px;
+}
+.skill-cards {
+	margin-top: 3%;
+}
+.skill-card {
+	height: 150px;
+	width: 150px;
+	border: solid 1px rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.025);
+	border-radius: 25px;
+	padding: 10px;
+	filter: grayscale(100%);
+	transition: 0.5s;
+	transform: scale(0.5);
+	opacity: 0;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+.skill-card:hover {
+	filter: grayscale(0%);
+	transition: 0.5s;
+}
+.skill-img {
+	height: 100%;
+	width: 100%;
+}
+.project-card {
+	width: 95%;
+	height: 92.5%;
+	background-color: transparent;
+	border-radius: 20px;
+	padding: 10px;
+	transition: 0.2s;
+	margin: 15px 2.5%;
+	border: solid 1px rgba(255, 255, 255, 0.05);
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	transition: 0.5s;
+	transform: scale(0.5);
+	opacity: 0;
+}
+.project-card:hover {
+	background-color: rgba(255, 255, 255, 0.025);
+	border: solid 1px rgba(255, 255, 255, 0.1);
+	transform: scale(1.01);
+}
+.preview {
+	width: 100%;
+	height: auto;
+	margin-right: 20px;
+	border-radius: 10px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+.project-name {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 1% 0;
+}
+.project-description {
+	font-size: 12px;
+	font-weight: 100;
+	margin: 1% 0;
+}
+.publish-date {
+	font-size: 10px;
+	font-weight: 300;
+	margin: 1% 0;
+	opacity: 0.5;
 }

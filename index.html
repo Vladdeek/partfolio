@@ -12,14 +12,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 d-flex justify-content-between align-items-center">
-						<p class="name">vladdeek</p>
+						<a class="link name" href="index.html">vladdeek</a>
 						<div class="links text-center">
 							<a class="link" href="#about">about</a>
 							<a class="link" href="#skill">skills</a>
 							<a class="link" href="#project">project</a>
 							<a class="link" href="#contact">contact</a>
 						</div>
-						<a class="git" href="#about">GitHub</a>
+						<a class="git" href="https://github.com/Vladdeek">GitHub</a>
 					</div>
 				</div>
 			</div>
@@ -42,27 +42,139 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<p class="title text-center">About me</p>
+						<p class="about title text-center">About me</p>
 						<div class="about-me d-flex">
-							<div class="col-6">
-								<img
-									class="img-profile"
-									src="img/avatar-default-svgrepo-com.svg"
-									alt="..."
-								/>
+							<div class="img-container col-6 d-flex justify-content-center">
+								<img class="img-profile" src="img/IMG_9721.HEIC" alt="..." />
 							</div>
-							<div class="col-6">
-								<p class="about-me-name">Владислав</p>
+							<div class="rezume-container col-6">
+								<p class="about-me-name">Рязанов Владислав Денисович</p>
 								<p class="about-me-stack">Front-End Developer</p>
-								<p class="about-me-text"></p>
+								<div class="about-me-text">
+									<p class="paragraph">
+										Я, [Ваше имя], фронтенд-разработчик с [количество] лет опыта
+										в создании пользовательских интерфейсов. Мои ключевые навыки
+										включают в себя глубокое понимание HTML, CSS и уверенное
+										владение фреймворком Bootstrap. Я специализируюсь на
+										разработке адаптивных и интерактивных веб-страниц, которые
+										обеспечивают отличный пользовательский опыт.
+									</p>
+									<p class="paragraph">
+										В своей работе я активно применяю современные инструменты и
+										библиотеки, такие как [перечисли используемые инструменты,
+										например, препроцессоры CSS, сборщики, линтеры]. За время
+										своей карьеры я успешно реализовал множество проектов
+										различной сложности, от небольших лендингов до масштабных
+										веб-приложений. Например, [опишите один-два наиболее
+										значимых проекта, указав свои конкретные достижения].
+									</p>
+									<p class="paragraph">
+										Я постоянно стремлюсь к совершенствованию своих навыков и
+										слежу за последними тенденциями в веб-разработке. Уверен в
+										своих способностях быстро адаптироваться к новым технологиям
+										и решать нестандартные задачи.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="skill"></section>
-		<section id="project"></section>
+		<section id="skill">
+			<div class="container">
+				<p class="skill title text-center">Skill</p>
+				<div class="row d-flex justify-content-center">
+					<div class="skill-cards col-9 d-flex justify-content-between">
+						<div id="card1" class="skill-card">
+							<img class="skill-img" src="img/html-svgrepo-com.svg" alt="" />
+						</div>
+						<div id="card2" class="skill-card">
+							<img class="skill-img" src="img/css-svgrepo-com.svg" alt="" />
+						</div>
+						<div id="card3" class="skill-card">
+							<img
+								class="skill-img"
+								src="img/bootstrap-fill-svgrepo-com.svg"
+								alt=""
+							/>
+						</div>
+						<div id="card4" class="skill-card">
+							<img
+								class="skill-img"
+								src="img/brand-js-svgrepo-com.svg"
+								alt=""
+							/>
+						</div>
+						<div id="card5" class="skill-card">
+							<img class="skill-img" src="img/react-svgrepo-com.svg" alt="" />
+						</div>
+						<div id="card6" class="skill-card">
+							<img class="skill-img" src="img/git-svgrepo-com.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="project">
+			<div class="container">
+				<p class="project title text-center">Projects</p>
+				<div class="row d-flex justify-content-center">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="project-card" onclick="window.location.href='#'">
+							<img src="img/preview2.png" alt="..." class="preview" />
+							<div class="content-info d-flex flex-column">
+								<p class="publish-date">November 20, 2024</p>
+								<p class="project-name">
+									Федерация спортивного программирования
+								</p>
+								<p class="project-description">
+									Университетский проект, выполненный как первый условный заказ
+									для представления нашей области спортивного программирования.
+									Цель — создать профессиональный сайт, отражающий деятельность
+									федерации и её достижения.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div
+							class="project-card"
+							onclick="window.location.href='https://vladdeek.github.io/todo/'"
+						>
+							<img src="img/preview1.png" alt="..." class="preview" />
+							<div class="content-info d-flex flex-column">
+								<p class="publish-date">November 16, 2024</p>
+								<p class="project-name">To-Do list</p>
+								<p class="project-description">
+									Личный проект, созданный для практики и улучшения навыков в
+									разработке веб-приложений. Цель — реализовать функциональный
+									список задач с возможностью добавления, редактирования и
+									удаления элементов.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div
+							class="project-card"
+							onclick="window.location.href='https://vladdeek.github.io/calculator/'"
+						>
+							<img src="img/preview3.png" alt="..." class="preview" />
+							<div class="content-info d-flex flex-column">
+								<p class="publish-date">July 16, 2024</p>
+								<p class="project-name">Калькулятор на JS</p>
+								<p class="project-description">
+									Личный проект для практики в создании интерфейсов с
+									JavaScript. Цель — реализовать калькулятор с базовыми
+									математическими операциями.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section id="contact"></section>
 		<footer id="footer"></footer>
 		<script src="js/script.js"></script>
