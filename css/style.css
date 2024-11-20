@@ -9,9 +9,20 @@ body {
 }
 section#start {
 	margin-top: 10%;
+	margin-bottom: 20%;
+}
+section#about {
+	margin-bottom: 10%;
 }
 section {
+	/*background-color: aquamarine;
+	border: solid 5px peru;*/
 	margin-bottom: 20%;
+}
+.margin-box {
+	width: 100vw;
+	height: 15vh;
+	display: block;
 }
 a,
 p {
@@ -55,13 +66,13 @@ p {
 .name {
 	font-size: 25px;
 	font-weight: 800;
+	margin: 0;
 }
 .large-name {
 	font-size: 150px;
 	font-weight: 900;
 	z-index: 4;
 	position: relative;
-	animation: fadeIn 1s;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -69,32 +80,25 @@ p {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	cursor: default;
+	opacity: 0;
+	transition: 0.75s;
 }
 .shadow {
 	color: var(--bg-color);
 	text-shadow: 1px 1px 0 var(--text-color), -1px -1px 0 var(--text-color),
 		1px -1px 0 var(--text-color), -1px 1px 0 var(--text-color);
 	margin-top: -195px;
+	opacity: 0;
+	transition: 1s;
 }
 #shadow1 {
-	opacity: 0.75;
 	z-index: 3;
-	animation: fadeIn 2s;
 }
 #shadow2 {
-	opacity: 0.5;
 	z-index: 2;
-	animation: fadeIn 3s;
 }
 #shadow3 {
-	opacity: 0.25;
 	z-index: 1;
-	animation: fadeIn 4s;
-}
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
 }
 .img-profile {
 	background-color: white;
