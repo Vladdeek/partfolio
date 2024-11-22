@@ -1,6 +1,12 @@
 const th = 1
 
 // Скрипт выполняется при загрузке страницы
+window.addEventListener('DOMContentLoaded', () => {
+	const targetSection = document.getElementById('header')
+	if (targetSection) {
+		targetSection.scrollIntoView({ behavior: 'smooth' })
+	}
+})
 window.addEventListener('DOMContentLoaded', event => {
 	const text = document.querySelector('.large-name')
 	const shadow1 = document.getElementById('shadow1')
@@ -101,3 +107,31 @@ const anim3 = new IntersectionObserver(
 )
 
 anim3.observe(animPoint3)
+
+//плавный скролл
+function scrollToSection(sectionId, duration) {
+	const section = document.getElementById(sectionId)
+	const startPosition = window.scrollY // Начальная позиция
+	const endPosition = section.offsetTop // Конечная позиция
+	const distance = endPosition - startPosition // Расстояние до элемента
+	let startTime = null
+
+	function animationScroll(currentTime) {
+		if (!startTime) startTime = currentTime // Запись времени начала
+		const elapsedTime = currentTime - startTime // Время, прошедшее с начала
+		const progress = Math.min(elapsedTime / duration, 1) // Прогресс (0 до 1)
+
+		window.scrollTo(0, startPosition + distance * easeInOutQuad(progress)) // Считаем текущую позицию
+
+		if (progress < 1) {
+			requestAnimationFrame(animationScroll) // Продолжаем анимацию
+		}
+	}
+
+	// Функция для плавности (ускорение/замедление)
+	function easeInOutQuad(t) {
+		return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2
+	}
+
+	requestAnimationFrame(animationScroll)
+}
